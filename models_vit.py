@@ -45,12 +45,16 @@ class VisionTransformer(timm.models.vision_transformer.VisionTransformer):
 
         if self.global_pool:
             x = x[:, 1:, :].mean(dim=1)  # global pool without cls token
+            x = x.view(B, -1)  # Ensure the tensor has shape [B, 1024]
             outcome = self.fc_norm(x)
         else:
             x = self.norm(x)
             outcome = x[:, 0]
 
         return outcome
+
+
+
 
 
 def vit_base_patch16(**kwargs):

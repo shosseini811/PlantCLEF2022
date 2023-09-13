@@ -6,3 +6,22 @@
 # Datasource local storage ignored files
 /dataSources/
 /dataSources.local.xml
+
+*.csv
+*.pth
+*.tar
+*.gz
+*.env
+*.log
+*.txt
+*.zip
+*.pyc
+images*/
+
+*.jpg
+articles/
+*.ipynb
+
+
+
+

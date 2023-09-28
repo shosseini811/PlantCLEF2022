@@ -6,7 +6,9 @@
 # Datasource local storage ignored files
 /dataSources/
 /dataSources.local.xml
-
+# data/
+images/
+# *.jpg
 *.csv
 *.pth
 *.tar
@@ -22,6 +24,7 @@ images*/
 articles/
 *.ipynb
 
+.DS_Store
 
 
 

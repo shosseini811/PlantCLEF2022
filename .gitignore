@@ -6,9 +6,10 @@
 # Datasource local storage ignored files
 /dataSources/
 /dataSources.local.xml
-# data/
+data/
+
 images/
-# *.jpg
+
 *.csv
 *.pth
 *.tar
@@ -18,8 +19,6 @@ images/
 *.txt
 *.zip
 *.pyc
-images*/
-
 *.jpg
 articles/
 *.ipynb
